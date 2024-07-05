@@ -10,7 +10,7 @@ public class BulletCtrl : MonoBehaviour
     void Start()
     {
         rb.AddForce(transform.forward * speed);
-        Destroy(this.gameObject, 3.0f);
+        Destroy(gameObject, 3.0f);
     }
 
     void Update()

@@ -9,7 +9,7 @@ public class PlayerCtrl : MonoBehaviour
     public AudioSource source;
     public AudioClip clipFlash;
     public Light flashLight;
-    public bool isRun = false;
+    public static bool isRun = false;
     void Start()
     {
         
@@ -54,7 +54,7 @@ public class PlayerCtrl : MonoBehaviour
         }
         else if ((!Input.GetKey(KeyCode.LeftShift) || !Input.GetKey(KeyCode.W)) && isRun)
         {
-            ani.Play("idle");
+            ani.Play("runStop");
             isRun = false;
         }
     }
